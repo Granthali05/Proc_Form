@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <title>Proctor Information</title>
+  <link rel="icon" href="0.png" type="image/x-icon">
+  <link rel="stylesheet" href="main1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="outerContainer">
+    <!--------------------------------1st form --------------------------------------------->
+    <div>
+      <form class="form-inline" id="form1" role="form">
+        <header class="header">
+          <h1 id="title" class="text-center">Student Details</h1>
+          <p id="description" class="description text-center"></p>
+        </header>
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="phone">Mobile No:</label>
+          <input type="" name="phone_no" id="phone_number" min="10" class="form-control" placeholder="Phone Number"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label id="address-label" for="address">Address:</label>
+          <input type="address" name="address" id="address" class="form-control" placeholder="Enter your Address"
+            required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Blood Group</label>
+          <input type="text" name="bg" id="bg" class="form-control" placeholder="Enter your blood group" required />
+        </div>
+
+        <div class="form-group">
+           <label id="photo-label" for="photo">Current Photo:</label>
+          
+              <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+          
+        </div>
+
+        
+        <div class="form-group">
+          <label id="email-label" for="email">Email-id</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email-id" required />
+
+        </div>
+
+
+        <div class="form-group">
+          <label id="bdate" for="date">Birth Date:</label>
+          <input type="date" name="bdate" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label id="myad" for="month">Month/Year of Admission:</label>
+          <input type="month" name="myad" class="form-control" required>
+          <label>to
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />First year</label>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Direct Second
+            Year</label>
+        </div>
+        <div class="form-group">
+          <label id="hobby" for="hobby">Hobbies:</label>
+          <textarea id="hobbies" name="hobbies" class="form-control" placeholder="Write your hobbies here...."></textarea>
+
+        </div>
+        <div class="form-group">
+          <label id="hobby" for="hobby">Sports:</label>
+          <textarea id="hobbies" name="hobbies" class="form-control" placeholder="Write your hobbies here...."></textarea>
+        </div>
+        <div class="form-group">
+          <label id="hobby" for="hobby">Any Health Related Problems</label>
+          <textarea id="hobbies" name="hobbies" class="form-control" placeholder="Write your hobbies here...."></textarea>
+        
+        </div>
+        <br>
+      </form>
+    </div>
+    <!-------------------------------- 2nd Form ------------------------------->
+    <div>
+      <form class="form-inline" id="form2" role="form">
+        <header class="header">
+          <h1 id="title" class="text-center">Family Details</h1>
+          <p id="description" class="description text-center"></p>
+        </header>
+        <div class="form-group">
+          <label id="fname" for="name">Father's Name:</label>
+          <input type="text" name="fname" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label id="fname" for="name">Mother's Name:</label>
+          <input type="text" name="fname" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label id="fname" for="name">Sibling's Name:</label>
+          <input type="text" name="fname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label id="age" for="Age">Age:</label>
+          <input type="number" name="fage" placeholder="Father's Age" class="form-group" required>
+          <input type="number" name="mage" placeholder="Mother's Age" class="form-group" required>
+          <input type="number" name="sage" placeholder="Sibling's Age" class="form-group">
+        </div>
+
+
+
+        <div class="form-group">
+          <label id="Qualification" for="Qualification">Qualification:</label>
+          <input type="text" name="fqua" placeholder="Father's Qualification" class="form-group" required>
+          <input type="text" name="mqua" placeholder="Mother's Qualification" class="form-group" required>
+          <input type="text" name="squa" placeholder="Sibling's Qualification" class="form-group">
+        </div>
+        <div class="form-group">
+          <label id="occ" for="Occupation">Occupation:</label>
+          <input type="text" name="focc" placeholder="Father's occupation" class="form-group" required>
+          <input type="text" name="mocc" placeholder="Mother's occupation" class="form-group" required>
+          <input type="text" name="socc" placeholder="Sibling's occupation" class="form-group">
+        </div>
+        <div class="form-group">
+          <label id="phone" for="phone_no">Mobile No.:</label>
+          <input type="tel" name="fph" placeholder="Father's Mobile No." class="form-group" pattern="[0-9]{10}"  required>
+          <input type="tel" name="mph" placeholder="Mother's Mobile No." class="form-group" pattern="[0-9]{10}" required>
+          <input type="tel" name="sph" placeholder="Sibling's Mobile No." class="form-group" pattern="[0-9]{10}">
+        </div>
+        <div class="form-group">
+          <label id="email" for="phone_no">Email-id:</label>
+          <input type="email" name="femail" placeholder="Father's Email-id" class="form-control" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group"><input type="email" name="memail" placeholder="Mother's Email-id" class="form-control" pattern="[0-9]{10}" required></div>
+          <div class="form-group">
+          <input type="email" name="semail" placeholder="Sibling's Email-id" class="form-control" pattern="[0-9]{10}">
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      </form>
+    </div>
+
+
+
+    <!-------------------------------------- 3rd Form  ------------------------------------->
+  
+    <div>
+      <form class="form-inline" id="form3" role="form">
+        <header class="header">
+          <h1 id="title" class="text-center">Education Qualification</h1>
+          <p id="description" class="description text-center"></p>
+        </header>
+
+        <div class="form-group">
+          <H2>SSC Details:<H2>
+        </div>
+        
+        <div clas="form-group">
+          <label id="sscyear" for="year">Year:</label>
+          <input type="month" class="form-control">
+        </div>
+        
+          
+
+        <div class="form-group">
+          <label id="board" for="board">Board:</label>
+          <select id="dropdown" name="board" class="form-control" required>
+            <option disabled selected value>Select your board</option>
+            <option value="student">Maharashtra Board</option>
+            <option value="job">ICSE</option>
+            <option value="learner">CBSE</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label id="name-label" for="name">10th Certificate:</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+        </div>
+        <div class="form-group">
+          <H2>12th or Diploma Final Year Result:</H2>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+        </div>
+
+        <br><br>
+        <form class="form-inline" id="form3" role="form">
+          <header class="header">
+            <h1 id="title" class="text-center">Academic Record</h1>
+            <p id="description" class="description text-center"></p>
+          </header>
+        
+          <div class="form-group">
+            <label class="form-group">SEMESTER 1:</label>
+          </div>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br><br><br><br>
+        
+      </form>
+    </div>
+    
+    
+    
+    
+    <!---------------------------- 4th Form  --------------------------------->
+    <div>
+      <form class="form-inline" id="form4" role="form">
+        <header class="header">
+          <h1 id="title" class="text-center">Future Plans</h1>
+          <H2>Higher Education:</H2>
+          
+        </header>
+
+        <div class="form-group">
+            <label class="form-group">MBA:</label>       
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />CAT</label>
+                <label>
+                  <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />CET</label>
+
+        </div>
+
+
+
+        <div class="form-group">
+          <label class="form-group">ME/M-TECH:</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />GATE</label>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group">MS:</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />GRE:</label>
+          <label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />TOFEL</label>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group">Other:</label>
+          <textarea id="fother" class="input-textarea" name="fother"" placeholder="Mention your other future plans"></textarea>
+        </div>
+
+        <div class="form-group">
+        <H2>Area Of Service:</H2>
+        <textarea id="fother" class="input-textarea" name="fother"" placeholder="Industry/Education/Others"></textarea>
+          </div>
+     
+      </form>
+    </div>
+  </div>
+<br><br><br>
+  <input type="submit" value="submit" onclick="submitforms()" class="submit-button" />
+  <br><br><br>
+  <br><br><br><br>
+</body>
+
+</html>
+<script>
+  submitForms = function () {
+    document.getElementById("form1").submit();
+    document.getElementById("form2").submit();
+    document.getElementById("form3").submit();
+    document.getElementById("form4").submit();
+  };
+</script>
